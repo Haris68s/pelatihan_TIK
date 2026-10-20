@@ -1,18 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-    <title>profil saya Haris</title>
-    <link rel="stylesheet" href="style.css" >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pelatihan TIK</title>
+    <!-- Menghubungkan file CSS eksternal -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="card-profile">
-    <img src="profile.jpg" alt="myProfil"> 
-    <h1>Haris suyanto</h1>
-    <p>Siswa smk yang tertarik dengan teknologi</p>
-    <a href="https://www.instagram.com/?hl=en">kunjungi instagram</a>
-      <br>
-    <button id="sayHi">Say HI!</button>
-  </div>
-<script src="script.js"></script>
+    <header>
+        <h1>Profil Pelatihan TIK</h1>
+    </header>
+
+    <main class="container">
+        <!-- Kartu Profil -->
+        <div class="card">
+            <!-- Menampilkan gambar profil -->
+            <img src="profile.jpg" alt="Foto Profil" class="profile-img">
+            <h2>Selamat Datang!</h2>
+            <p>Ini adalah halaman web sederhana hasil dari proyek Pelatihan TIK.</p>
+            
+            <!-- Tombol interaktif yang memicu fungsi JavaScript -->
+            <button id="btnSapa" onclick="sapaPengguna()">Klik Saya</button>
+            
+            <!-- Tempat menampilkan pesan dinamis dari JavaScript -->
+            <p id="pesanSapaan" class="pesan"></p>
+        </div>
+    </main>
+
+    <!-- Menghubungkan file JavaScript eksternal di akhir body agar elemen HTML dimuat terlebih dahulu -->
+    <script src="script.js"></script>
 </body>
 </html>
