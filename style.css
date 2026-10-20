@@ -1,29 +1,76 @@
-body{
-  background-color: #ffffe0; /* untuk warna pada background */
-  font-family: Arial, sans-serif; /* untuk font*/
-  color: #191970; /* warna pada text */
+/* Reset margin dasar dan pengaturan font global */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
 }
 
-.card-profile {
-  width: 300px;
-  margin: 50px auto;
-  padding: 20px;
-  background-color: white;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-.card-profile img{
-    width: 150px;
-    height: 150px;
+/* Pengaturan tata letak header */
+header {
+    background-color: #0056b3;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Container utama untuk menempatkan kartu di tengah */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 20rem 20px 20px 20px;
+}
+
+/* Desain tampilan kartu profil */
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    max-width: 350px;
+    width: 100%;
+}
+
+/* Pengaturan bentuk dan ukuran foto profil */
+.profile-img {
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid #0056b3;
 }
-.card-profile{
-  text-align: center;
-}
-button{
-    margin-top: 10px;
-    padding: 10px;
-    background-color: rgb(0, 72, 255);
+
+/* Desain tombol */
+button {
+    background-color: #0056b3;
+    color: white;
     border: none;
-    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+}
+
+/* Efek saat tombol diarahkan kursor (hover) */
+button:hover {
+    background-color: #003d82;
+}
+
+/* Gaya teks pesan hasil klik tombol */
+.pesan {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #28a745;
 }
