@@ -1,0 +1,21 @@
+body{
+  background-color: #ffffe0; /* untuk warna pada background
+  font-family: Arial, sans-serif; /* untuk font
+  color: #191970; /* warna pada text
+}
+
+.card-profile {
+  width: 300px;
+  margin: 50px auto;
+  padding: 20px;
+  backgrounf-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+.card-profile img{
+    width: 150px;
+    border-radius: 50%;
+}
+.card-profile{
+  text-align: center;
+}
